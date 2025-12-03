@@ -27,24 +27,54 @@
 
 ## PROGRAM:
  ```
-/*
+
 Program to implement a final & Static using Java
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: M.Suryakumar
+RegisterNumber:  212224040340
+
 ```
 
 ## Sourcecode.java:
 
+```
+class Subject {
+    String subject1, subject2, subject3, subject4;
 
+    void dispSub(String s1, String s2, String s3, String s4) {
+        subject1 = s1;
+        subject2 = s2;
+        subject3 = s3;
+        subject4 = s4;
+        System.out.println(subject1 + " " + subject2 + " " + subject3 + " " + subject4);
+    }
+}
 
+class Student {
+    int Stu_Id;
+    Subject sub = new Subject();
 
+    void disp(int id, String s1, String s2, String s3, String s4) {
+        Stu_Id = id;
+        System.out.println(Stu_Id);
+        sub.dispSub(s1, s2, s3, s4);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student st = new Student();
+        st.disp(101, "Java", "DS", "TOC", "CG");
+    }
+}
+```
 
 
 
 ## OUTPUT:
 
+<img width="459" height="275" alt="image" src="https://github.com/user-attachments/assets/fbf12c05-34e3-4ec9-aac4-69d1fcaa59b6" />
 
 
 ## RESULT:
 Thus, the java program to perform final & static keyword was executed successfully.
+
