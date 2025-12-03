@@ -24,14 +24,57 @@ b.	Call the methods to get input and display results.
  ```
 /*
 Program to implement a Multiple Inheritance
-Developed by: 
-RegisterNumber:  
+Developed by: M.Suryakumar
+RegisterNumber:  212224040340
 */
 ```
 
 ## Sourcecode.java:
 
+```
+class Student
+{
+    Student()
+    {
+        System.out.println("Student Class");
+    }
+}
 
+class Marks extends Student
+{
+    Marks()
+    {
+        System.out.println("Marks Class");
+    }
+}
+
+class Total extends Marks
+{
+    Total()
+    {
+        System.out.println("Total Class");
+    }
+}
+
+class Average extends Total
+{
+    Average()
+    {
+        System.out.println("Average Class");
+    }
+}
+
+
+public class Main
+{
+    public static void main(String args[])
+    {
+        Average obj = new Average();
+        
+        
+    }
+}
+```
 
 
 
@@ -39,8 +82,10 @@ RegisterNumber:
 
 ## OUTPUT:
 
+<img width="447" height="218" alt="image" src="https://github.com/user-attachments/assets/6a423157-222f-428c-939b-eaebb0d4c07e" />
 
 
 ## RESULT:
 
 Thus, the java program demonstrates multiple inheritance using interfaces and successfully displays the mark sheet of a student by collecting personal and academic data. 
+
