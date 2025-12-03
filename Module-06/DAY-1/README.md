@@ -23,14 +23,39 @@ To create a Java Program to implement Method Local Inner Class.
  ```
 /*
 Program to implement a Inner Class using Java
-Developed by: 
-RegisterNumber:  
+Developed by: M.Suryakumar
+RegisterNumber:  212224040340
 */
 ```
 
 ## Sourcecode.java:
 
-
+```
+class MethodLocal
+{
+    public String value = "Name given in Outer Class is Johnson";
+    public void display()
+    {
+        class Inner
+        {
+            public void print()
+            {
+                System.out.println(value);
+            }
+        }
+        Inner obj1 = new Inner();
+        obj1.print();
+    }
+}
+public class Main
+{
+    public static void main(String[]args)
+    {
+        MethodLocal obj = new MethodLocal();
+        obj.display();
+    }
+}
+```
 
 
 
@@ -38,8 +63,10 @@ RegisterNumber:
 
 ## OUTPUT:
 
+<img width="831" height="155" alt="image" src="https://github.com/user-attachments/assets/b7da858f-3f62-4198-9fd1-d4833f4e16d7" />
 
 
 ## RESULT:
 Thus, the Java Program using Method Local Inner Class was executed successfully.
+
 
