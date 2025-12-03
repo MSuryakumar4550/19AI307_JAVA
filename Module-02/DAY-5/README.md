@@ -18,25 +18,52 @@ To write a Java program that reads an array size and elements from the user and 
  ```
 /*
 Program to implement a Smallest Element in an Array
-Developed by: 
-RegisterNumber:  
+Developed by: M.Suryakumar
+RegisterNumber:  212224040340
 */
 ```
 
 ## Sourcecode.java:
 
+```
+import java.util.Scanner;
 
+public class LargestElement {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        int size = scanner.nextInt();
+        int[] array = new int[size];
 
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
+
+        int largest = array[0]; // Assume the first element is the largest initially
+
+        for (int i = 1; i < size; i++) {
+            if (array[i] > largest) {
+                largest = array[i];
+            }
+        }
+
+        System.out.println("The largest element in the array is: " + largest);
+
+        scanner.close();
+    }
+}
+```
 
 
 
 ## OUTPUT:
 
+<img width="902" height="373" alt="image" src="https://github.com/user-attachments/assets/4ce0577f-1a5c-4e4e-96ce-a8cd4291edb9" />
 
 
 ## RESULT:
 Thus the java program successfully reads the array size and elements from the user and correctly finds and prints the smallest number in the array.
+
 
 
 
