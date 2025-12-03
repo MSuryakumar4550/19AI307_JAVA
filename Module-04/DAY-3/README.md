@@ -25,16 +25,51 @@ To Create a Java program to implement super keyword in constructor.
 
 ## PROGRAM:
  ```
-/*
+
 Program to implement a Constructor Chaining using Java
-Developed by: 
-RegisterNumber:  
-*/
+Developed by: M.Suryakumar
+RegisterNumber:  212224040340
+
 ```
 
 ## Sourcecode.java:
 
+```
 
+class Gadgets {
+
+  //Write Your code Here
+  void display()
+  {
+      System.out.println("I am a Gadget");
+  }
+}
+
+class Parrot extends Gadgets {
+
+//Write Your code Here  
+void display()
+{
+    System.out.println("I am a Laptop");
+}
+void print()
+{
+    super.display();
+}
+  
+}
+
+public class Main {
+  public static void main(String[] args) {
+      
+      //Write Your code Here
+      Parrot obj=new Parrot();
+      obj.display();
+      obj.print();
+  }
+}
+
+```
 
 
 
@@ -43,9 +78,12 @@ RegisterNumber:
 ## OUTPUT:
 
 
+<img width="410" height="280" alt="image" src="https://github.com/user-attachments/assets/6aa4b457-6cf8-4f53-9f21-cf54ef543caa" />
+
 
 ## RESULT:
 Thus the java program for constructor chaining was executed successfully.
+
 
 
 
